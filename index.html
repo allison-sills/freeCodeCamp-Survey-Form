@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>freeCodeCamp Survey Form</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="styles.css">
+    <h1 id ="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">
+      <label id="name-label">Name<br>
+      <input id="name" type="text" placeholder="Enter your name" required></label><br><br>
+      <label id="email-label">Email<br>
+      <input id="email" type="email" placeholder="Enter your email" required></label><br><br>
+      <label id="number-label">Age(optional)<br>
+      <input id="number" type="number" placeholder="Age" min="13" max = "99"></label><br><br>
+      <label for="dropdown">Which option best describes your current employment status?</label><br><br>
+      <select id="dropdown" name="dropdown">
+          <option value="Unemployed">Unemployed</option>
+          <option value="Employed FT">Employed Full-Time</option>
+          <option value="Employed PT">Employed Part-Time</option>
+      </select><br><br>
+      <label for="radioBtns">How likely are you to recommend freeCodeCamp to a friend?</label><br><br>
+<input type="radio" id="NotLikely" name="likelyToRecommend" value="NotLikely">
+<label for="NotLikely">Not Likely</label><br>
+<input type="radio" id="Likely" name="likelyToRecommend" value="Likely">
+<label for="Likely">Likely</label><br>
+<input type="radio" id="HighlyLikely" name="likelyToRecommend" value="HighlyLikely">
+<label for="HighlyLikely">Highly Likely</label><br><br>
+<label for="heardAboutUs">How did you hear about us?</label><br><br>
+<input type="checkbox" id="socialMedia" name="socialMedia" value="socialMedia">Social Media</input><br>
+<input type="checkbox" id="searchEngine" name="searchEngine" value="searchEngine">Search Engine(Google, Bing, Yahoo etc.)</input><br>
+<input type="checkbox" id="friend" name="friend" value="friend">Friend</input><br>
+<input type="checkbox" id="other" name="other" value="other">Other</input><br><br>
+<label for="suggestions">Any additional suggestions or comments?<br><br>
+<textarea id="suggestions" name="suggestions" rows="4" cols="50">Enter your comment here...</textarea><br><br>
+<button type="submit" name="submit" id="submit">Submit</button>
+    </form>
+  </body>
+
+</html>

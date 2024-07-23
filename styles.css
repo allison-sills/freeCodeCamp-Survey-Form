@@ -1,0 +1,17 @@
+*{
+  background-color: #23395d;
+  color: white;
+
+}
+.survey-form{
+  width:80%;
+  
+}
+#submit{
+  padding: 5px;
+  border: outset;
+  text-align:center;
+  display:inline-block;
+  font-size: 16px;
+  width:30%;
+}
