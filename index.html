@@ -2,41 +2,62 @@
 <html>
   <head>
     <title>freeCodeCamp Survey Form</title>
+    <!-- The <title> tag defines the title of the webpage, which appears in the browser tab -->
   </head>
   <body>
+    <!-- Linking an external CSS file for styling -->
     <link rel="stylesheet" href="styles.css">
-    <h1 id ="title">freeCodeCamp Survey Form</h1>
+
+    <!-- Main heading of the survey form -->
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+
+    <!-- A description or subtitle for the survey form -->
     <p id="description">Thank you for taking the time to help us improve the platform</p>
 
+    <!-- Start of the form with an id for styling and scripting purposes -->
     <form id="survey-form">
+      <!-- Label and input field for the user's name with a required attribute -->
       <label id="name-label">Name<br>
       <input id="name" type="text" placeholder="Enter your name" required></label><br><br>
+
+      <!-- Label and input field for the user's email with a required attribute -->
       <label id="email-label">Email<br>
       <input id="email" type="email" placeholder="Enter your email" required></label><br><br>
-      <label id="number-label">Age(optional)<br>
-      <input id="number" type="number" placeholder="Age" min="13" max = "99"></label><br><br>
+
+      <!-- Label and input field for the user's age with optional entry and range limits -->
+      <label id="number-label">Age (optional)<br>
+      <input id="number" type="number" placeholder="Age" min="13" max="99"></label><br><br>
+
+      <!-- Dropdown for employment status with predefined options -->
       <label for="dropdown">Which option best describes your current employment status?</label><br><br>
       <select id="dropdown" name="dropdown">
           <option value="Unemployed">Unemployed</option>
           <option value="Employed FT">Employed Full-Time</option>
           <option value="Employed PT">Employed Part-Time</option>
       </select><br><br>
+
+      <!-- Radio buttons for likelyhood of recommending freeCodeCamp -->
       <label for="radioBtns">How likely are you to recommend freeCodeCamp to a friend?</label><br><br>
-<input type="radio" id="NotLikely" name="likelyToRecommend" value="NotLikely">
-<label for="NotLikely">Not Likely</label><br>
-<input type="radio" id="Likely" name="likelyToRecommend" value="Likely">
-<label for="Likely">Likely</label><br>
-<input type="radio" id="HighlyLikely" name="likelyToRecommend" value="HighlyLikely">
-<label for="HighlyLikely">Highly Likely</label><br><br>
-<label for="heardAboutUs">How did you hear about us?</label><br><br>
-<input type="checkbox" id="socialMedia" name="socialMedia" value="socialMedia">Social Media</input><br>
-<input type="checkbox" id="searchEngine" name="searchEngine" value="searchEngine">Search Engine(Google, Bing, Yahoo etc.)</input><br>
-<input type="checkbox" id="friend" name="friend" value="friend">Friend</input><br>
-<input type="checkbox" id="other" name="other" value="other">Other</input><br><br>
-<label for="suggestions">Any additional suggestions or comments?<br><br>
-<textarea id="suggestions" name="suggestions" rows="4" cols="50">Enter your comment here...</textarea><br><br>
-<button type="submit" name="submit" id="submit">Submit</button>
+      <input type="radio" id="NotLikely" name="likelyToRecommend" value="NotLikely">
+      <label for="NotLikely">Not Likely</label><br>
+      <input type="radio" id="Likely" name="likelyToRecommend" value="Likely">
+      <label for="Likely">Likely</label><br>
+      <input type="radio" id="HighlyLikely" name="likelyToRecommend" value="HighlyLikely">
+      <label for="HighlyLikely">Highly Likely</label><br><br>
+
+      <!-- Checkboxes for how the user heard about freeCodeCamp -->
+      <label for="heardAboutUs">How did you hear about us?</label><br><br>
+      <input type="checkbox" id="socialMedia" name="socialMedia" value="socialMedia">Social Media</input><br>
+      <input type="checkbox" id="searchEngine" name="searchEngine" value="searchEngine">Search Engine (Google, Bing, Yahoo etc.)</input><br>
+      <input type="checkbox" id="friend" name="friend" value="friend">Friend</input><br>
+      <input type="checkbox" id="other" name="other" value="other">Other</input><br><br>
+
+      <!-- Textarea for additional comments or suggestions -->
+      <label for="suggestions">Any additional suggestions or comments?<br><br>
+      <textarea id="suggestions" name="suggestions" rows="4" cols="50">Enter your comment here...</textarea><br><br>
+
+      <!-- Submit button for the form -->
+      <button type="submit" name="submit" id="submit">Submit</button>
     </form>
   </body>
-
 </html>
