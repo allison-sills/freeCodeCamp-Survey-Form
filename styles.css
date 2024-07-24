@@ -1,17 +1,20 @@
-*{
-  background-color: #23395d;
-  color: white;
+/* Apply a background color and text color to all elements */
+* {
+  background-color: #23395d; /* Dark blue background color */
+  color: white; /* White text color */
+}
 
+/* Style the survey form with a class selector */
+.survey-form {
+  width: 80%; /* Set the width of the form to 80% of its container */
 }
-.survey-form{
-  width:80%;
-  
-}
-#submit{
-  padding: 5px;
-  border: outset;
-  text-align:center;
-  display:inline-block;
-  font-size: 16px;
-  width:30%;
+
+/* Style the submit button with an ID selector */
+#submit {
+  padding: 5px; /* Add padding inside the button */
+  border: outset; /* Give the button an outset border style */
+  text-align: center; /* Center the text inside the button */
+  display: inline-block; /* Display the button inline-block to allow width and height properties */
+  font-size: 16px; /* Set the font size of the button text */
+  width: 30%; /* Set the width of the button to 30% of its container */
 }
